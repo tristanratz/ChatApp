@@ -1,10 +1,11 @@
 matrix:
     include:
       - language: swift
+        os: osx
         osx_image: xcode12.2
         xcode_project: ClientApp.xcodeproj # path to your xcodeproj folder
         xcode_scheme: ClientApp
-        xcode_sdk: iphoneos14.2
+        xcode_sdk: iphonesimulator14.2
         # xcode_destination: platform=iphonesimulator,OS=14.2,name=iPhone X
         # script: xcodebuild -project ClientApp.xcodeproj -target ClientApp -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
       - language: python
